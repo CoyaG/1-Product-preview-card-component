@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+}
+ 
+/* Main Layout */
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  background-color: hsl(30, 38%, 92%);
+}
+.main-card{
+  height: 400px;
+  width: 550px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 2%;
+}
+
+/* Image */
+#desktop{
+  height: 100%;
+  width: 100%;
+}
+#mobile{
+  display: none;
+}
+
+/* Product Info */
+.product-photo, .product-info{
+  width: 50%;
+}
+.product-info{
+  padding: 0 5%;
+  background: hsl(0, 0%, 100%);
+}
+section{
+  display: flex;
+}
+button{
+  height: 10%;
+  width: 95%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .75rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  background: hsl(158, 36%, 37%);
+  border: hsl(158, 36%, 37%);
+  border-radius: 6px;
+}
+a{
+  text-decoration: none;
+  color: orangered;
+}
+a:hover{
+  color: hsl(228, 12%, 48%);
+}
+#button-a>button:hover{
+  background-color: hsl(212, 21%, 14%);
+}
+.carty{
+  margin-right: 3%;
+}
+h1, .price-main{
+  font-family: 'Fraunces', serif;
+  font-size: 1.6rem;
+}
+h3{
+  font-size: .65rem;
+  letter-spacing: .2rem;
+}
+h1+p{
+  font-size: .75rem;
+  line-height: 160%;
+}
+.price-strike{
+  font-size: .7rem;
+  text-decoration: line-through;
+  padding-top: 10%;
+  margin-left: 8%;
+}
+h3, h1+p, .price-strike{
+  color: hsl(228, 12%, 48%);
+}
+.price-main{
+  color: hsl(158, 36%, 37%);
+}
+
+/* Footnote */
+.attribution{
+  width: 550px;
+  margin: 0 auto;
+  font-size: .8rem;
+}
+
+/* Mobile */
+@media screen and (max-width: 413px) {
+  body{
+    height: 100vh;
+    width: 100vw;
+  }
+  .main-card{
+    height: 90%;
+    width: 90%;
+    flex-direction: column;
+  }
+  .product-photo, .product-info{
+    width: 100%;
+  }
+
+  /* Image */
+  #desktop{
+    display: none;
+  }
+  #mobile{
+    height: 100%;
+    width: 100%;
+    display: block;
+  }
+  .product-photo{
+    aspect-ratio: 4/2.85;
+  }
+
+  /* Product Info */
+  .product-info{
+    height: 65%;
+  }
+  h1{
+    font-size: 1.8rem;
+  }
+  h3{
+    font-size: .7rem;
+  }
+  .price-strike{
+    font-size: .75rem;
+    padding-top: 7%;
+  }
+  h1+p{
+    font-size: .86rem;
+  }
+  
+  /* Footnote */
+  .attribution{
+    width: 90%;
+  }
+}
