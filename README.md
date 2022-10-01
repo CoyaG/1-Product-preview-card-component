@@ -14,6 +14,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -52,23 +53,14 @@ I began with a basic layout of all of the main sections, using borders. I then a
 
 I was able to get more familiar with media queries and played around with hiding photos under certain circumstances.
 
+Update:
+From the community I learned of the picture tag and to add a del tag for accessibility:
+
 ```html
- <div class="main-card">
-    <div class="product-photo">
-      <img id="desktop" src="images/image-product-desktop.jpg">
-      <img id="mobile" src="images/image-product-mobile.jpg">
-    </div>
-  </div>
-```
-```css
-#desktop{
-    display: none;
-  }
-  #mobile{
-    height: 100%;
-    width: 100%;
-    display: block;
-  }
+  <picture class="product-photo"> 
+      <source media="(max-width: 413px)" srcset="images/image-product-mobile.jpg">
+      <img class="desktop" src="images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum">
+    </picture>
 ```
 
 ### Continued development
@@ -84,3 +76,7 @@ I am hoping to finally get a grasp on grid layouts and continue with learning Ja
 
 - Frontend Mentor - [@CoyaG](https://www.frontendmentor.io/profile/CoyaG)
 - Twitter - [@CoyaG1](https://twitter.com/CoyaG1)
+
+## Acknowledgments
+
+Community members [Lucas](https://www.frontendmentor.io/profile/correlucas) and [バレンタイン](https://www.frontendmentor.io/profile/vcarames) helped out with some tips.
