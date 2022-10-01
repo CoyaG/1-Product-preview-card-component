@@ -84,4 +84,3 @@ I am hoping to finally get a grasp on grid layouts and continue with learning Ja
 
 - Frontend Mentor - [@CoyaG](https://www.frontendmentor.io/profile/CoyaG)
 - Twitter - [@CoyaG1](https://twitter.com/CoyaG1)
-
