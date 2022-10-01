@@ -21,17 +21,18 @@ body{
 }
 
 /* Image */
-#desktop{
+.desktop{
   height: 100%;
   width: 100%;
 }
-#mobile{
+/* .mobile{
   display: none;
-}
+} */
 
 /* Product Info */
 .product-photo, .product-info{
   width: 50%;
+  border: 1px solid red;
 }
 .product-info{
   padding: 0 5%;
@@ -61,7 +62,7 @@ a{
 a:hover{
   color: hsl(228, 12%, 48%);
 }
-#button-a>button:hover{
+.button-a>button:hover{
   background-color: hsl(212, 21%, 14%);
 }
 .carty{
@@ -115,14 +116,14 @@ h3, h1+p, .price-strike{
   }
 
   /* Image */
-  #desktop{
+  /* .desktop{
     display: none;
-  }
-  #mobile{
+  } */
+  /* .mobile{
     height: 100%;
     width: 100%;
     display: block;
-  }
+  } */
   .product-photo{
     aspect-ratio: 4/2.85;
   }
