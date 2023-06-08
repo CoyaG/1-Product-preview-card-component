@@ -103,8 +103,8 @@ span, h1+p, .price-strike{
     width: 100vw;
   }
   .main-card{
-    height: 90%;
-    width: 90%;
+    height: 600.3px;
+    width: 337.5px;
     flex-direction: column;
   }
   .product-photo, .product-info{
@@ -136,6 +136,6 @@ span, h1+p, .price-strike{
   
   /* Footnote */
   .attribution{
-    width: 90%;
+    width: 337.5px;
   }
 }
